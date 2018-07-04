@@ -1,6 +1,10 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import logo from "../logo.svg";
+
+const mapStateToProps = state => {
+  return {};
+};
 
 class App extends Component {
   render() {
@@ -18,4 +22,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect(mapStateToProps)(App);

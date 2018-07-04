@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./containers/App";
-import registerServiceWorker from "./registerServiceWorker";
 import { Provider } from "react-redux";
-import { createStore, combineReducers, applyMiddleware } from "redux";
+import { applyMiddleware, combineReducers, createStore } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import thunk from "redux-thunk";
+import App from "./containers/App";
+import "./index.css";
 import reducers from "./reducers";
+import registerServiceWorker from "./registerServiceWorker";
 
 let store;
 if (process.env.NODE_ENV === "development") {

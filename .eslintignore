@@ -1,0 +1,6 @@
+/public/
+/node_modules/
+/node_modules/
+/src/test/
+prettier.config.js
+/src/registerServiceWorker.js

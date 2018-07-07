@@ -1,8 +1,9 @@
+import { css, StyleSheet } from 'aphrodite';
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import '../styles/App.css';
 import Helmet from 'react-helmet';
-import { StyleSheet, css } from 'aphrodite';
+import { connect } from 'react-redux';
+import Menu from '../components/Menu';
+import '../styles/App.css';
 
 const mapStateToProps = (state) => {
   return {};
@@ -40,9 +41,10 @@ class App extends Component {
     return (
       <div className={css(styles.root)}>
         <Helmet
-          title="React Production Starter"
-          titleTemplate="%s - React Production Starter"
-        />
+            title="React Production Starter"
+            titleTemplate="%s - React Production Starter"
+          />
+        <Menu />
         <h1 className={css(styles.title)}>
           React
           Redux

@@ -4,3 +4,5 @@
 /src/test/
 prettier.config.js
 /src/registerServiceWorker.js
+/dist/
+/build/

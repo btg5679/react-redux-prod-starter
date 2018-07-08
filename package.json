@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "webpack-dev-server",
+    "build": "rimraf dist && cross-env NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint": "eslint .; exit 0",
@@ -12,17 +12,29 @@
   },
   "dependencies": {
     "aphrodite": "^2.2.2",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "connected-react-router": "^4.3.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.0",
     "eslint": "^5.0.1",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-jsx-a11y": "^6.1.0",
     "eslint-plugin-react": "^7.10.0",
     "history": "^4.7.2",
+    "html-webpack-plugin": "^3.2.0",
+    "path": "^0.12.7",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-helmet": "^5.2.0",
+    "react-hot-loader": "^4.3.3",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "react-router-redux": "^4.0.8",
@@ -30,7 +42,14 @@
     "redux": "^4.0.0",
     "redux-devtools": "^3.4.1",
     "redux-devtools-extension": "^2.13.5",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "rimraf": "^2.6.2",
+    "stats-webpack-plugin": "^0.6.2",
+    "webpack": "^4.15.1",
+    "webpack-dev-server": "^3.1.4"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "webpack-cli": "^3.0.8"
+  }
 }

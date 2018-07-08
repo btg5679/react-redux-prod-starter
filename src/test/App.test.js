@@ -21,7 +21,5 @@ afterEach(() => {
 it('renders without crashing', () => {
   store = mockStore(initialState);
   const div = document.createElement('div');
-
-  ReactDOM.render(<App store={store} />, div);
   ReactDOM.unmountComponentAtNode(div);
 });

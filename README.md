@@ -27,6 +27,7 @@ $ yarn  # Install project dependencies (or `npm install`)
 $ yarn start  # Start the development server (or `npm start`)
 ```
 Yarn Start fires up a webpack-dev-server instance, there is a lot going on here that is covered below in detail.  This will be your most used command during development.  There are other scripts offered out of the box:
+
 |`yarn <script>`    |Description|
 |-------------------|-----------|
 |`start`            |Serves your app at `localhost:8080`|

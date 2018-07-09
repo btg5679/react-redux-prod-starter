@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const StatsPlugin = require('stats-webpack-plugin');
 
 module.exports = {
   mode: 'development',

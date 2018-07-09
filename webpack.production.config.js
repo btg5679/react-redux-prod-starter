@@ -36,7 +36,7 @@ module.exports = {
     // file as they dont have to wait for the JS to load.
     new ExtractTextPlugin('main-[hash].min.css'),
     // creates a stats.json
-    new StatsPlugin('webpack.stats.json', {
+    new StatsPlugin('/webpack-stats.json', {
       source: false,
       modules: false,
     }),
